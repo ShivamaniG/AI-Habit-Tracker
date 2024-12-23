@@ -1,6 +1,6 @@
-# Habit Tracker Motivator
+# AI - Habit Tracker Motivator
 
-## Frontend - REACTJS & MATERIAL-UI
+## FRONTEND - REACTJS & MATERIAL-UI
 
 ### Overview
 This project provides a web-based Habit Tracker application with the following key features:
@@ -31,7 +31,7 @@ This project provides a web-based Habit Tracker application with the following k
    ```bash
    npm start
 
-## Backend - NODEJS/EXPRESSJS & MYSQL
+## BACKEND - NODEJS/EXPRESSJS & MYSQL
 
 The backend of the Habit Tracker Motivator is built using Node.js and connects to a MySQL database for managing users and their habits. It provides a set of RESTful APIs to handle operations such as user creation, login, habit management, and profile updates.
 
@@ -75,7 +75,7 @@ The backend of the Habit Tracker Motivator is built using Node.js and connects t
 
 
    
-## AI Suggesting System - FLASK & SCIKIT-LEARN
+## AI SUGGESTING SYSTEM - FLASK & SCIKIT-LEARN
 
 The AI Suggesting System is a Flask app that generates habit recommendations based on a user's existing habits. The system compares habit categories using cosine similarity, providing the user with suggestions for new habits to adopt based on their current habits.
 
