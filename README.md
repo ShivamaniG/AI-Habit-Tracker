@@ -27,3 +27,64 @@ This project provides a web-based Habit Tracker application with the following k
 1. Navigate to the frontend folder:
    ```bash
    cd frontend/habit-tracker
+2. Start the application:
+   ```bash
+   npm start
+
+## Backend
+
+The backend of the Habit Tracker Motivator is built using Node.js and connects to a MySQL database for managing users and their habits. It provides a set of RESTful APIs to handle operations such as user creation, login, habit management, and profile updates.
+
+### Features
+
+- **User Authentication**: Users can create accounts, log in, and update their profiles.
+- **Habit Management**: Users can create, update, retrieve, and delete habits.
+- **MySQL Database**: All user and habit data is stored in a local MySQL database.
+
+### To Access the Backend:
+
+1. Navigate to the backend folder:
+   ```bash
+   cd backend
+2. Start the application:
+   ```bash
+   node app.js
+## AI Suggesting System
+
+The AI Suggesting System is a Flask app that generates habit recommendations based on a user's existing habits. The system compares habit categories using cosine similarity, providing the user with suggestions for new habits to adopt based on their current habits.
+
+### Features
+
+- **Habit Recommendations**: The app compares the categories of a user's habits to a predefined list of habit categories.
+- **Cosine Similarity**: The app uses cosine similarity to determine the similarity between the user's habits and available habit categories.
+- **Top 3 Suggestions**: The app returns the top 3 habit suggestions in JSON format.
+
+### API Route
+
+- **Generate Habit Suggestions**
+  - **Method**: `GET`
+  - **URL**: `http://127.0.0.1:5000/generate-habit-suggestions`
+  - **Response**:
+    ```json
+    [
+      {
+        "habit_title": "Morning Meditation",
+        "category": "Mental Health"
+      },
+      {
+        "habit_title": "Daily Yoga",
+        "category": "Physical Health"
+      },
+      {
+        "habit_title": "Drink More Water",
+        "category": "Physical Health"
+      }
+    ]
+    ```
+
+### To Access the Flask Code:
+
+1. Navigate to the AI Service folder:
+   ```bash
+   cd ai_service
+
